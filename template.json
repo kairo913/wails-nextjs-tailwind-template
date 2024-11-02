@@ -1,0 +1,7 @@
+{
+    "name": "wails-nextjs-tailwind-template",
+    "shortname": "nextjs-tailwind",
+    "author": "kairo913",
+    "description": "A wails template with Next.js and Tailwind CSS",
+    "helpurl": "https://github.com/kairo913/wails-nextjs-tailwind-template"
+}

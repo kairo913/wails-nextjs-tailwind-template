@@ -1,21 +1,24 @@
 @import "tailwindcss";
 
-@theme {
-    --color-background: #ffffff;
-    --color-foreground: #171717;
-    --color-dark-background: #0a0a0a;
-    --color-dark-foreground: #ededed;
-}
-
-body {
-    color: var(--color-foreground);
-    background: var(--color-background);
-    font-family: Arial, Helvetica, sans-serif;
+:root {
+    --background: #ffffff;
+    --foreground: #171717;
 }
 
 @media (prefers-color-scheme: dark) {
-    body {
-        color: var(--color-dark-foreground);
-        background: var(--color-dark-background);
+    :root {
+        --background: #0a0a0a;
+        --foreground: #ededed;
     }
+}
+
+@theme {
+    --color-background: var(--background);
+    --color-foreground: var(--foreground);
+}
+
+body {
+    color: var(--foreground);
+    background: var(--background);
+    font-family: Arial, Helvetica, sans-serif;
 }
